@@ -13,9 +13,10 @@ class App extends Component {
   render () {
     const {name, age} = this.state
     return (
-      <MyContext.Provider value={{name, age}}>
-        <Profile name={name} age={age}/>
-      </MyContext.Provider>
+        <MyContext.Provider value={{name, age}} >
+          <Profile name={name} age={age}/>
+        </MyContext.Provider>
+
     )
 
   }
